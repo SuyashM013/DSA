@@ -13,13 +13,13 @@ void subarray(int arr[], int len){
                 cout << arr[j];
             }
             cout << endl;
-        }
+        }                    
     }
 
 }
 
-
 //  Recursion se ab kare - 
+
 
 void subarrayrec(vector<int> v,int arr[], int n, int idx ){
     if(idx == n){
@@ -41,8 +41,6 @@ void subarrayrec(vector<int> v,int arr[], int n, int idx ){
         subarrayrec(v, arr, n, idx+1);
     }
 }
-
-
 
 
 int main()
