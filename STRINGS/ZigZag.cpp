@@ -1,5 +1,4 @@
-// Leetcode 6
-
+// Leetcode 6 Compl...
 #include <iostream>
 using namespace std;
 int main()
@@ -11,7 +10,7 @@ int main()
         for(int j= 0; j<5; j++){
             cout << j <<" ";
 
-            if()
+            // if()
         }
         cout << endl;
     }
