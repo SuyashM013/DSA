@@ -20,7 +20,7 @@ void permutation(string ans, string original){
 int main()
 {
 
-    string str = "ab";
+    string str = "123";
     permutation("", str);
 
 
