@@ -30,6 +30,7 @@ void brute_inversion(vector<int> &a)
 
 
 // To remove global variable we can use a variable inside merge function and then return the count var.
+
 // Optimized - O(nlogn); O(n) -> Merge sort se krte hai
 vector<int> mergesort(vector<int> &left, vector<int> &right, vector<int> &ans)
 {
