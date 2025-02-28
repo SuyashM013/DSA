@@ -42,7 +42,6 @@ void quicksort(int arr[], int si, int ei){
     quicksort(arr, pi+1, ei);
 }
 
-
 int main()
 {
     int arr[] = {1, 3, 2, 5, -4, 6, 7, 8, 9, 10};
