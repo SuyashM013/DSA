@@ -1,4 +1,7 @@
 // Leetcode - 2529
+#include <iostream>
+#include <vector>
+using namespace std;
 
 class Solution {
     public:
