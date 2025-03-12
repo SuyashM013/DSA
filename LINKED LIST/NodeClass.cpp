@@ -36,13 +36,25 @@ int main()
     // d.next = NULL;
 
 
-    cout << a.val << endl;
-    cout << b.val << endl;
+    // cout << a.val << endl;
+    // cout << b.val << endl;
 
-    cout << (a.next)-> val << endl;
-    cout << ((a.next)->next) -> val << endl;
-    cout << ((a.next->next)->next) -> val << endl;
-    cout << (((a.next->next -> next)) -> next) -> val;
+    // cout << (a.next)-> val << endl;
+    // cout << ((a.next)->next) -> val << endl;
+    // cout << ((a.next->next)->next) -> val << endl;
+    // cout << (((a.next->next -> next)) -> next) -> val;
+
+    cout << endl <<endl;
+    cout << "-----------------------------------------------";
+
+    Node temp = a;
+    while(1){
+        cout << temp.val << " ";
+        if(temp.next == NULL) break;
+        temp = *(temp.next);
+    }
+
+
 
     cout << endl;
     return 0;
