@@ -35,7 +35,6 @@ void displayrec(Node *head)
     cout << head->val << " ";
 }
 
-
 int size(Node *head)
 {
     int n = 0;
@@ -47,6 +46,7 @@ int size(Node *head)
     }
     return n;
 }
+
 void insertAtEnd(Node *head, int val)
 {
     Node *t = new Node(val);
