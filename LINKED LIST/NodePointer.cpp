@@ -14,32 +14,56 @@ public:
     }
 };
 
-// void display(Node* head){
-//     Node* temp = head;
-//     while(temp != NULL){
-//         cout << temp->val<< " ";
-//         temp = temp->next;
-//     }
-//     cout << endl;
-// }
+void display(Node *head)
+{
+    Node *temp = head;
+    while (temp != NULL)
+    {
+        cout << temp->val << " ";
+        temp = temp->next;
+    }
+    cout << endl;
+}
 
-//Using Recursion 
- 
-void displayrec(Node* head){
-    if(head == NULL) return;
+// Using Recursion
+
+void displayrec(Node *head)
+{
+    if (head == NULL)
+        return;
     displayrec(head->next);
     cout << head->val << " ";
 }
 
-int size(Node* head){
+
+int size(Node *head)
+{
     int n = 0;
-    Node* temp = head;
-    while(temp!=NULL){
-     n++;
-     temp = temp->next;
+    Node *temp = head;
+    while (temp != NULL)
+    {
+        n++;
+        temp = temp->next;
     }
     return n;
+}
+void insertAtEnd(Node *head, int val)
+{
+    Node *t = new Node(val);
+    while (head->next != NULL)
+    {
+        head = head->next;
+    }
+    head->next = t;
+    cout << endl;
+}
 
+void insertAtHead(Node *head, int val)
+{
+
+    Node *t = new Node(val);
+    t->next = head;
+    head = t;
 }
 
 int main()
@@ -55,7 +79,14 @@ int main()
     b->next = c; // b ke me c ka dal do
     c->next = d;
     d->next = e;
+    display(a);
+    cout << endl;
 
+    insertAtEnd(a, 90);
+    display(a);
+
+    insertAtHead(a, 110);
+    display(a);
 
     // Direct Print ->
     // cout << a->next->next->next->val; // 40
@@ -68,7 +99,6 @@ int main()
     //     temp = temp->next;
     // }
     // display(a);
-    displayrec(a);
     cout << endl;
     cout << "Size of LL - " << size(a);
 
