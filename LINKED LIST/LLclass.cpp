@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+//WITH TAIL POINTER
+
 class Node
 { // user defined data type
 
