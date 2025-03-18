@@ -49,10 +49,10 @@ int main()
     int arr[] = {1,2,3}; //1 12 123 1234 2 23 234 3 34 4 -> sub array
     int size = sizeof(arr)/sizeof(arr[0]);
     
-// subarray(arr, size);
+subarray(arr, size);
 cout << "------------------------------------"<< endl;
 vector<int> v;
-subarrayrec(v, arr, size ,0);
+// subarrayrec(v, arr, size ,0);
 
     cout << endl;
     return 0;
