@@ -41,8 +41,6 @@ class Solution {
             return c->next;
     
     
-
-    
             ListNode* temp1 = list1;
             ListNode* temp2 = list2;
             ListNode* c = new ListNode(700) ;
