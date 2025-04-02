@@ -151,7 +151,7 @@ int main()
 
     cout << "ADDING" << endl;
 
-    Node* ans =  Add(a, d);
+    Node* ans =  addTwoNumbers(a, d);
     Display(ans);
 
     cout << endl;
