@@ -1,4 +1,4 @@
-// subarray matlab subsequence jo ki continous fashion me ho
+// subarray matlab subsequence jo ki continous fashion me ho 
 // subset alag hote or sub array alag hote
 
 #include <iostream>
