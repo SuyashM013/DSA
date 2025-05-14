@@ -13,6 +13,7 @@ void print(stack<int> a){
 }
 int main()
 {
+    
 
     stack<int> st;
     stack<int> gt;
