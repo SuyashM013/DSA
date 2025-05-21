@@ -40,6 +40,12 @@ public:
 
 int main()
 {
+
+    Solution s;
+    string se = "{[]}";
+    bool ans = s.isValid(se);
+    cout << ans;
+
     cout << endl;
     return 0;
 }
