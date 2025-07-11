@@ -41,7 +41,7 @@ void RemoveConDup(string a){
 
 int main(){
 
-    string exp = "aaaaaaaaaaaaaaaabbbbbbbbbbbbbbcc";
+    string exp = "aaaaaaaaaaaaaaaabbbaabnbbbbbbbbbbcc";
     sort(exp.begin(), exp.end());
     cout << exp << endl;
 
