@@ -8,7 +8,7 @@ void display(queue<int> &q)
 
     int n = q.size();
 
-    for (int i = 1; i <= n; i++)
+    for ( int i = 1; i <= n; i++ )
     {
         int x = q.front();
         cout << x << " ";
@@ -17,8 +17,7 @@ void display(queue<int> &q)
     }
     cout << endl;
 }
-
-
+ 
 
 int main()
 {
