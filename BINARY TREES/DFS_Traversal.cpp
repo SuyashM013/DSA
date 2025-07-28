@@ -1,4 +1,5 @@
 #include <iostream>
+#include <queue>
 using namespace std;
 
 class Node
@@ -57,17 +58,35 @@ void nthlevel(Node *root, int n, int level)
     nthlevel(root->right, n + 1, level);
     nthlevel(root->left, n + 1, level);
 }
-int levels(Node* root){
-     if(root==NULL) return 0;
+int levels(Node *root)
+{
+    if (root == NULL)
+        return 0;
     return 1 + max(levels(root->left), levels(root->right));
 }
 
-void levelorder(Node* root){
+void levelorder(Node *root)
+{
     int n = levels(root);
-    for(int i = 1; i<=n; i++){
+    for (int i = 1; i <= n; i++)
+    {
         nthlevel(root, 1, i);
         cout << endl;
     }
+}
+
+void levelorderQueue(Node *root)
+{
+    queue<Node *> q;
+    q.push(root);
+    while(!q.empty()){
+        Node* temp = q.front();
+        q.pop();
+        cout << temp->val<< " ";
+        if(temp ->left != NULL) q.push(temp->left);
+        if(temp ->right != NULL) q.push(temp->right);
+    }
+    cout << endl;
 }
 
 int main()
@@ -103,10 +122,11 @@ int main()
     postorder(a);
     cout << endl;
 
-    nthlevel(a,1,3);
+    nthlevel(a, 1, 3);
     cout << endl;
 
     levelorder(a);
+    levelorderQueue(a);
 
     cout << endl;
     return 0;
