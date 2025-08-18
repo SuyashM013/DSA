@@ -63,11 +63,11 @@ void levelorderQueue(Node *root)
     {
         Node *temp = q.front();
         q.pop();
-        cout << temp->val << " ";
         if (temp->left != NULL)
-            q.push(temp->left);
+        q.push(temp->left);
         if (temp->right != NULL)
-            q.push(temp->right);
+        q.push(temp->right);
+        cout << temp->val << " ";
     }
     cout << endl;
 }
