@@ -24,6 +24,7 @@ void reversePart(int start, int end, vector<int> &v)
         start++;
         end--;
     }
+    cout << endl;
 }
 
 int main()
