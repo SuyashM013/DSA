@@ -18,13 +18,14 @@ int cost(vector<int> &m, int i, int j, vector<vector<int>> &dp)
 {
     if (i == j)
         return 0;
+    if (dp[i][j] != -1) return dp[i][j];
     int ans = INT_MAX;
 
     for (int k = i; k <= j-1; k++)
     {
         ans = min({ans,cost(m, i, k, dp) + cost(m, k + 1, j, dp) + smoke(m,i,k)*smoke(m,k+1,j)});
     }
-    return ans;
+    return dp[i][j] = ans;
 }
 
 int main()
