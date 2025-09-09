@@ -30,6 +30,28 @@ public:
         vector<vector<int>> dp(n + 1, vector<int>(m + 1, -1));
 
         return f(s1, s2, n, m, dp);
+
+        vector<vector<int>> dp(n + 1, vector<int>(m + 1, 0));
+
+        // Top down 
+
+        for (int i = 1; i <= n; i++)
+        {
+            for (int j = 1; j <= m; j++)
+            {
+                if (s1[i - 1] == s2[j - 1])
+                {
+                    dp[i][j] = 1 + dp[i - 1][j - 1];
+                }
+
+                else
+                {
+                    dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
+                }
+            }
+        }
+
+        return dp[n][m];
     }
 };
 
