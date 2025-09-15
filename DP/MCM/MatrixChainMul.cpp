@@ -1,7 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <climits>
+#include <bits/stdc++.h>
 using namespace std;
 
 int cost(vector<int>& m, int i, int j, vector<vector<int>>& dp){
@@ -27,9 +24,6 @@ int main()
         cin >> tem;
         m.push_back(tem);
     }
-    // for(int i =0 ; i<n; i++){
-    //     cout << m[i]<<" ";
-    // }
     cout << cost(m,0,n-1,dp);
 
 
